@@ -46,6 +46,10 @@
 
 // See definition at: http://www.azillionmonkeys.com/qed/hash.html
 
+void chik_chirik() {
+    printf("chik chirik\n");
+}
+
 uint32_t teoHashSuperFast(const char * data, int len) {
     uint32_t hash = len;
     int rem;

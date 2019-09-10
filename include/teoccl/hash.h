@@ -45,6 +45,7 @@ ub4 teoHashFast(ub1 *k, ub4 length, ub4 initval); /* the previous hash,
                                                      or an arbitrary value
                                                    */
 
+void chik_chirik();
 #ifdef __cplusplus
 }
 #endif

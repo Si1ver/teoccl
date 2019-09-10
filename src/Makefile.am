@@ -36,10 +36,10 @@ AM_LDFLAGS =
 
 LIBS =
 
-lib_LTLIBRARIES = libteoccl.la
+lib_LTLIBRARIES = libteoccl-3.la
 
 
-libteoccl_la_SOURCES = \
+libteoccl_3_la_SOURCES = \
 	teoccl/memory.c \
 	teoccl/queue.c \
 	teoccl/hash.c \
@@ -51,7 +51,7 @@ libteoccl_la_SOURCES = \
 	teoccl/que.c \
 	teoccl/stack.c
 
-libteocclincludedir=$(includedir)/teoccl
+libteocclincludedir=$(includedir)/teoccl-$(API_VERSION)/teoccl
 
 libteocclinclude_HEADERS = \
 	../include/teoccl/memory.h \
@@ -68,6 +68,6 @@ libteocclinclude_HEADERS = \
 	../include/teoccl/stack.h \
 	teoccl/teoccl.hpp
 
-libteoccl_la_LDFLAGS = $(AM_LDFLAGS) -version-info $(LIBRARY_CURRENT):$(LIBRARY_REVISION):$(LIBRARY_AGE)
+libteoccl_3_la_LDFLAGS = $(AM_LDFLAGS) -version-info $(LIBRARY_CURRENT):$(LIBRARY_REVISION):$(LIBRARY_AGE)
 
-libteoccl_la_LIBADD = $(TEOCCL_LIBS)
+libteoccl_3_la_LIBADD = $(TEOCCL_LIBS)
