@@ -7,4 +7,4 @@ Name: @PACKAGE_NAME@
 Description: Teoccl: Teonet c container library
 Version: @PACKAGE_VERSION@
 Cflags: -I${includedir}/teoccl-@API_VERSION@
-Libs: -L${libdir} -lteoccl
+Libs: -L${libdir} -lteoccl-@API_VERSION@
