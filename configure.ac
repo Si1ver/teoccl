@@ -14,13 +14,13 @@ AC_SUBST([$1], ['$2'])
 ])
 # END
 
-m4_define([library_major], [0]) dnl
+m4_define([library_major], [5]) dnl
 m4_define([library_minor], [1]) dnl
 m4_define([library_patch], [2]) dnl
 m4_define([library_version], [library_major[.]library_minor[.]library_patch]) dnl
 
 AC_PREREQ([2.69])
-AC_INIT([libteoccl0], [library_version], [Kirill Scherba <kirill@scherba.ru>, Max Ponka <mpano91@gmail.com>])
+AC_INIT([libteoccl5], [library_version], [Kirill Scherba <kirill@scherba.ru>, Max Ponka <mpano91@gmail.com>])
 
 AC_DEFINE_SUBST(LIBRARY_CURRENT,  1, [teoccl dynamic library version])
 AC_DEFINE_SUBST(LIBRARY_REVISION, 0, [teoccl dynamic library version])
