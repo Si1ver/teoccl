@@ -28,7 +28,7 @@ endif
 
 AM_LDFLAGS = -L../src/.libs 
 
-LIBS = ../src/.libs/libteoccl.a -lcunit -lCppUTest
+LIBS = ../src/.libs/libteoccl-$(API_VERSION).a -lcunit -lCppUTest
 
 noinst_PROGRAMS = teoccl_tst teoccl_cpp_tst
 
